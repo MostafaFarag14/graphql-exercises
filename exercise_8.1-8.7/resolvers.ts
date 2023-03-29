@@ -13,6 +13,7 @@ export const resolvers = {
     bookCount: () => books.length,
     authorCount: () => authors.length,
     allBooks: (parent: any, args: any) => {
+      
       const { author, genre } = args;
       let filteredBooks = books;
       if (author) {
